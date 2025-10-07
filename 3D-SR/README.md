@@ -6,6 +6,7 @@ The result is a set of plane patches (polyhedra), their centers, and a contact n
 ## Requirements
 - MATLAB R2020a+ (R2021a or newer recommended)
 
+## Output
 The script loops over **alpha_list × D0_list × run_time** and stops once it adds $N$ planes. For each run, it saves:
 	
   •	*_upper_planes.mat — upper_plane_all{t} (upper offset plane vertices)
