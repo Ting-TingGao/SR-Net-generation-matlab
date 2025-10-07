@@ -7,7 +7,7 @@ The result is a set of plane patches (polyhedra), their centers, and a contact n
 - MATLAB R2020a+ (R2021a or newer recommended)
 
 ## Run
-To generate 3D network structure, run **Main_3D.m**
+To generate 3D SR network structure, run **Main_3D.m**
 
 ## Output
 The script loops over **alpha_list × D0_list × run_time** and stops once it adds $N$ planes. For each run, it saves:
