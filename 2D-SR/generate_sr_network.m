@@ -127,13 +127,12 @@ while try_time < max_try_lines && Notjammed
             [xb, yb] = boundary(polygon_list{t+1}{chosed_polygon});
             mid_points = [mid_points; [xt, yt]]; 
 
-            if t == 1 && ~isempty(opts.first_angle_deg)
-                at = opts.first_angle_deg;
+            if t == 0 && ~isempty(opts.first_angle_deg)
+                at = opts.first_angle_deg; 
             else
-                at = 180 * rand(1);
+                at = 180 * rand(1);  
             end
-
-            angles = [angles; at]; 
+            angles = [angles; at];
 
             rt = deg2rad(at);     
             lt = sqrt(2*side_len_initial);         
